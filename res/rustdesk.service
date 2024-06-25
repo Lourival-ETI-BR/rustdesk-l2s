@@ -1,5 +1,5 @@
 [Unit]
-Description=RustDesk
+Description=RustDeskL2S
 Requires=network.target
 After=systemd-user-sessions.service
 
@@ -7,7 +7,7 @@ After=systemd-user-sessions.service
 Type=simple
 ExecStart=/usr/bin/rustdesk --service
 ExecStop=pkill -f "rustdesk --tray"
-PIDFile=/run/rustdesk.pid
+PIDFile=/run/rustdeskl2s.pid
 KillMode=mixed
 TimeoutStopSec=30
 User=root
